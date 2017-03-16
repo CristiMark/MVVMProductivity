@@ -14,7 +14,7 @@
                     <Grid Background="#FFE5E5E5" Margin="0,1,0,-1">
                         <Button x:Name="button" Content="Button" Margin="171,162,184,11"/>
                         <Label x:Name="PropretiesName" Content="PropretyName" HorizontalAlignment="Left" Margin="52,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,-0.183"/>
-                        <Label x:Name="label_Copy" Content="Label" HorizontalAlignment="Left" Margin="52,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,-0.183"/>
+                        <Label x:Name="label_Copy" Content="Name" HorizontalAlignment="Left" Margin="52,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,-0.183"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="ICommand">
