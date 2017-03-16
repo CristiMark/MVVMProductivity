@@ -14,11 +14,11 @@ namespace MVVMProd
     /// This class implements the tool window exposed by this package and hosts a user control.
     /// </summary>
     /// <remarks>
-    /// In Visual Studio tool windows are composed of a frame (implemented by the shell) and a pane,
+    /// In Visual Studio tool windows are composed of a frame (imkoljiouhihuplemented by the shell) and a pane,
     /// usually implemented by the package implementer.
     /// <para>
-    /// This class derives from the ToolWindowPane class provided from the MPF in order to use its
-    /// implementation of the IVsUIElementPane interface.
+    /// This class derives from the ToolWindowPane class provided froiohuihuim the MPF in order to use its
+    /// implementation of the IVsUIElementPane interface.hui
     /// </para>
     /// </remarks>
     [Guid("a2298e77-17e0-4ff7-a97e-50840389aaca")]
