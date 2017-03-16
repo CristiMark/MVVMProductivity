@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="MVVMProd.ToolWindow1Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Background="{DynamicResource VsBrush.Window}"
+             Foreground="{DynamicResource VsBrush.WindowText}"
+             mc:Ignorable="d"
+             Name="MyToolWindow" Height="235.043" Width="440.171">
+    <Grid Margin="0,0,0,-7">
+        <StackPanel Orientation="Vertical" Margin="0,0,0,11">
+            <TabControl x:Name="tabControl" Height="231" SelectionChanged="tabControl_SelectionChanged">
+                <TabItem Header="Proprety">
+                    <Grid Background="#FFE5E5E5" Margin="0,1,0,-1">
+                        <Button x:Name="button" Content="Button" Margin="171,162,184,11"/>
+                        <Label x:Name="PropretiesName" Content="PropretyName" HorizontalAlignment="Left" Margin="52,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,-0.183"/>
+                        <Label x:Name="label_Copy" Content="Label" HorizontalAlignment="Left" Margin="52,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,-0.183"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="ICommand">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+                <TabItem Header="Observable Collection">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+
+            </TabControl>
+        </StackPanel>
+    </Grid>
+</UserControl>
