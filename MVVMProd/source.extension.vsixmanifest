@@ -3,7 +3,8 @@
   <Metadata>
     <Identity Id="MVVMProd.Cristian Keisz.ceabb940-3d4b-4d6f-aec6-6ddc50265e5b" Version="1.0" Language="en-US" Publisher="Cristian Keisz" />
     <DisplayName>MVVMProd</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description xml:space="preserve">Create Propreties, Poco Propreties IComment, Observable Collection and Singleton fasterCreate cREATE pRO</Description>
+    <License>Resources\LICENSE</License>
     <Icon>Resources\Icon.png</Icon>
     <PreviewImage>Resources\Preview.png</PreviewImage>
   </Metadata>
