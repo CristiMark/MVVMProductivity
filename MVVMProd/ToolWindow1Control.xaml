@@ -23,11 +23,11 @@
                             Margin="171,162,184,11"
                             Content="Button" />
                         <Label
-                            x:Name="PropretiesName"
+                            x:Name="PropretYName"
                             Margin="52,46,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
-                            Content="PropretyName"
+                            Content="PropretyName:"
                             RenderTransformOrigin="0.254,-0.183" />
                         <Label
                             x:Name="label_Copy"
@@ -36,6 +36,7 @@
                             VerticalAlignment="Top"
                             Content="Name"
                             RenderTransformOrigin="0.254,-0.183" />
+                        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="147,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="ICommand">
