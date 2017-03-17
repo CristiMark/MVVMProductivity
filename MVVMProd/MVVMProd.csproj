@@ -180,7 +180,18 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\ToolWindow1Command.png" />
+    <Content Include="Resources\Icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\MvvmWindow1Command.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\Preview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\ToolWindow1Package.ico" />
     <VSCTCompile Include="ToolWindow1Package.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>

@@ -6,26 +6,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Name="MyToolWindow"
     Width="501.955"
-    Height="auto"
+    Height="237.215"
     Background="{DynamicResource VsBrush.Window}"
     Foreground="{DynamicResource VsBrush.WindowText}"
     mc:Ignorable="d">
+
     <Grid>
-        <StackPanel Margin="0,0,0,11" Orientation="Vertical">
+        <StackPanel Orientation="Vertical">
             <TabControl
                 x:Name="tabControl"
-                Height="231"
-                SelectionChanged="tabControl_SelectionChanged">
+                Height="233"
+               >
                 <TabItem Header="Property">
                     <Grid Margin="0,3,0,0">
                         <Button
                             x:Name="button"
-                            Margin="165,163,154,10"
+                            Margin="166,149,157,24"
                             HorizontalAlignment="Center"
                             Content="Copy" Width="169" Click="button_Click" />
                         <Label
                             x:Name="PropertyYName"
-                            Margin="10,46,0,0"
+                            Margin="13,46,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
                             Content="Property Name:"
@@ -41,11 +42,36 @@
                         <TextBox x:Name="PropType" Height="23" Margin="178,89,46,0"  VerticalAlignment="Top"/>
                     </Grid>
                 </TabItem>
+                <TabItem Header="Poco Property">
+                    <Grid Margin="0,3,0,0">
+                        <Button
+                            x:Name="buttonPocoProp"
+                            Margin="166,149,157,24"
+                            HorizontalAlignment="Center"
+                            Content="Copy" Width="169" Click="buttonPocoProp_Click" />
+                        <Label
+                            x:Name="PocoPropertyYName"
+                            Margin="13,46,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Poco Property Name:"
+                            RenderTransformOrigin="0.254,-0.183" />
+                        <Label
+                            x:Name="PocoProbType"
+                           Margin="13,86,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Poco Property Type:"
+                            RenderTransformOrigin="0.254,-0.183" />
+                        <TextBox x:Name="PocoPropName" Height="23" Margin="178,46,41,0"  VerticalAlignment="Top"/>
+                        <TextBox x:Name="PocoPropType" Height="23" Margin="178,89,46,0"  VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
                 <TabItem Header="ICommand">
                     <Grid Margin="0,3,0,0">
                         <Button
                             x:Name="buttonIcomm"
-                            Margin="165,163,154,10"
+                            Margin="166,149,157,24"
                             HorizontalAlignment="Center"
                             Width="169"
                             Content="Copy" Click="buttonIcomm_Click" />
@@ -63,13 +89,13 @@
                     <Grid Margin="0,3,0,0">
                         <Button
                             x:Name="buttonObsColl"
-                            Margin="165,163,154,10"
+                            Margin="166,149,157,24"
                             HorizontalAlignment="Center"
                             Width="169"
                             Content="Copy" Click="buttonObsColl_Click" />
                         <Label
                             x:Name="ObsCollYName"
-                            Margin="10,46,0,0"
+                            Margin="13,46,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
                             Content="Observable Collection Name:"
@@ -89,7 +115,7 @@
                     <Grid Margin="0,3,0,0">
                         <Button
                             x:Name="buttonSingle"
-                            Margin="165,163,154,10"
+                            Margin="166,149,157,24"
                             HorizontalAlignment="Center"
                             Width="169"
                             Content="Copy" Click="buttonSingle_Click" />
