@@ -5,45 +5,103 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Name="MyToolWindow"
-    Width="440.171"
-    Height="235.043"
+    Width="501.955"
+    Height="auto"
     Background="{DynamicResource VsBrush.Window}"
     Foreground="{DynamicResource VsBrush.WindowText}"
     mc:Ignorable="d">
-    <Grid Margin="0,0,0,-7">
+    <Grid>
         <StackPanel Margin="0,0,0,11" Orientation="Vertical">
             <TabControl
                 x:Name="tabControl"
                 Height="231"
                 SelectionChanged="tabControl_SelectionChanged">
-                <TabItem Header="Proprety">
-                    <Grid Margin="0,1,0,-1" Background="#FFE5E5E5">
+                <TabItem Header="Property">
+                    <Grid Margin="0,3,0,0">
                         <Button
                             x:Name="button"
-                            Margin="171,162,184,11"
-                            Content="Button" />
+                            Margin="165,163,154,10"
+                            HorizontalAlignment="Center"
+                            Content="Copy" Width="169" Click="button_Click" />
                         <Label
-                            x:Name="PropretYName"
-                            Margin="52,46,0,0"
+                            x:Name="PropertyYName"
+                            Margin="10,46,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
-                            Content="PropretyName:"
+                            Content="Property Name:"
                             RenderTransformOrigin="0.254,-0.183" />
                         <Label
                             x:Name="label_Copy"
-                            Margin="52,87,0,0"
+                            Margin="13,86,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
-                            Content="Name"
+                            Content="Property Type:"
                             RenderTransformOrigin="0.254,-0.183" />
-                        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="147,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
+                        <TextBox x:Name="PropName" Height="23" Margin="178,46,41,0"  VerticalAlignment="Top"/>
+                        <TextBox x:Name="PropType" Height="23" Margin="178,89,46,0"  VerticalAlignment="Top"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="ICommand">
-                    <Grid Background="#FFE5E5E5" />
+                    <Grid Margin="0,3,0,0">
+                        <Button
+                            x:Name="buttonIcomm"
+                            Margin="165,163,154,10"
+                            HorizontalAlignment="Center"
+                            Width="169"
+                            Content="Copy" Click="buttonIcomm_Click" />
+                        <Label
+                            x:Name="ICommName_lb"
+                            Margin="10,68,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="ICommand Name:"
+                            RenderTransformOrigin="0.254,-0.183" Width="107" />
+                        <TextBox x:Name="IComName" Height="23" Margin="178,71,41,0"  VerticalAlignment="Top"/>
+                    </Grid>
                 </TabItem>
                 <TabItem Header="Observable Collection">
-                    <Grid Background="#FFE5E5E5" />
+                    <Grid Margin="0,3,0,0">
+                        <Button
+                            x:Name="buttonObsColl"
+                            Margin="165,163,154,10"
+                            HorizontalAlignment="Center"
+                            Width="169"
+                            Content="Copy" Click="buttonObsColl_Click" />
+                        <Label
+                            x:Name="ObsCollYName"
+                            Margin="10,46,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Observable Collection Name:"
+                            RenderTransformOrigin="0.254,-0.183" />
+                        <Label
+                            x:Name="ObsColl_lb"
+                            Margin="13,86,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Observable Collection Type:"
+                            RenderTransformOrigin="0.254,-0.183" />
+                        <TextBox x:Name="ObsCollName" Height="23" Margin="178,46,41,0"  VerticalAlignment="Top"/>
+                        <TextBox x:Name="ObsCollType" Height="23" Margin="178,89,46,0"  VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Singleton">
+                    <Grid Margin="0,3,0,0">
+                        <Button
+                            x:Name="buttonSingle"
+                            Margin="165,163,154,10"
+                            HorizontalAlignment="Center"
+                            Width="169"
+                            Content="Copy" Click="buttonSingle_Click" />
+                        <Label
+                            x:Name="SingletonName_lb"
+                            Margin="10,68,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Content="Singleton Name:"
+                            RenderTransformOrigin="0.254,-0.183" Width="107" />
+                        <TextBox x:Name="SingleName" Height="23" Margin="178,71,41,0"  VerticalAlignment="Top"/>
+                    </Grid>
                 </TabItem>
 
             </TabControl>

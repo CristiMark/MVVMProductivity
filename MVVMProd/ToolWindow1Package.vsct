@@ -51,10 +51,10 @@
       
       
       <Button guid="guidToolWindow1PackageCmdSet" id="ToolWindow1CommandId" priority="0x0100" type="Button">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_TOOLS_EXT_CUST"/>
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>MVVM</ButtonText>
+          <ButtonText>MVVM Faster</ButtonText>
         </Strings>
       </Button>
     </Buttons>

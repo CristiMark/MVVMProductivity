@@ -41,5 +41,26 @@ namespace MVVMProd
         {
 
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            string Proprety = "#region Property " + PropName.Text + "\nprivate " + PropType.Text + " _" + PropName.Text + ";\npublic " + PropType.Text + " _" + PropName.Text + "\n{\nget\n{\nreturn _" + PropName.Text + ";\n}\nset\n{\n_" + PropName.Text + " = value;\nRaisePropertyChanged(" + PropName.Text + ");\n}\n}\n#endregion";
+            System.Windows.Forms.MessageBox.Show(Proprety);
+        }
+
+    private void buttonIcomm_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonObsColl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonSingle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
